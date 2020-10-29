@@ -96,4 +96,10 @@ void train(size_t i,Kmeans km){
 
 
 
-void graph(Kmeans k);
+void elbow(Dataset dt,size_t i,size_t a,size_t b){
+	for (size_t j=a;j<=b;j++){
+		Kmeans km=init(j,dt);
+		train(i,km);
+		// free_km(km);
+	}
+}

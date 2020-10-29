@@ -39,4 +39,4 @@ void train(size_t i,Kmeans km);
 
 
 
-void graph(Kmeans k);
+void elbow(Dataset dt,size_t i,size_t a,size_t b);
